@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Styled Links Layout</title>
+  <style>
+    /* Reset default margin and padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* General styles */
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    /* Container for both sections */
+    .container {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    /* Common styles for both sections */
+    .section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      padding: 20px;
+    }
+
+    /* Black background section */
+    .black-section {
+      background-color: black;
+      color: white;
+    }
+
+    /* White background section */
+    .white-section {
+      background-color: white;
+      color: black;
+    }
+
+    /* Link styles */
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin: 10px 0;
+    }
+
+    /* Black section links */
+    .black-section a {
+      color: white;
+    }
+
+    .black-section a:visited {
+      color: white;
+    }
+
+    .black-section a:hover {
+      color: white;
+    }
+
+    .black-section a:active {
+      color: white;
+    }
+
+    /* White section links */
+    .white-section a {
+      color: black;
+      text-decoration: underline;
+    }
+
+    /* Specific link styles */
+    .google {
+      color: black;
+      text-decoration: underline;
+    }
+
+    .google:hover {
+      color: red; /* Google turns red on hover */
+    }
+
+    .instagram {
+      color: black;
+      text-decoration: underline;
+    }
+
+    .instagram:visited {
+      color: green; /* instagram turns green when visited */
+    }
+
+    .deezer {
+      color: black;
+      text-decoration: underline;
+    }
+
+    .deezer:visited {
+      color: rgb(255, 0, 0); /* deezer turns green when visited */
+    }
+
+    .deezer:visited:hover {
+      color: red; /* deezer turns red when visited again and hovered */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Black background section -->
+    <div class="section black-section">
+      <div>
+        <p><a href="https://learnms.sut.edu.eg/">learnms</a></p>
+        <p><a href="https://open.spotify.com/intl-ar/">spotify</a></p>
+        <p><a href="https://facebook.com">facebook</a></p>
+      </div>
+    </div>
+
+    <!-- White background section -->
+    <div class="section white-section">
+      <div>
+        <p><a href="https://google.com" class="google">google</a></p>
+        <p><a href="https://www.instagram.com/" class="instagram">instagram</a></p>
+        <p><a href="https://www.deezer.com/" class="deezer">deezer</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
